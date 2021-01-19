@@ -1,22 +1,8 @@
 CREATE DATABASE absGestion; 
 
-
-EXECUTE
-
-
-create table Role(
-idRole int Primary Key identity(1,1),
-role varchar(50) NOT NULL
-);
-
 create table Formation(
 idFormation int Primary Key identity(1,1),
 formation varchar(50) NOT NULL
-);
-
-create table Salle(
-idSalle int Primary Key identity(1,1),
-salle int NOT NULL
 );
 
 create table Admin(
@@ -27,7 +13,6 @@ email varchar(50) NOT NULL,
 mdp varchar(50) NOT NULL,
 pdp varchar(50),
 phone varchar(50),
-idRole int REFERENCES Role(idRole) NOT NULL,
 );
 
 create table Secretaire(
@@ -37,8 +22,7 @@ prenom varchar(50) NOT NULL,
 email varchar(50) NOT NULL, 
 mdp varchar(50) NOT NULL,
 pdp varchar(50),
-phone varchar(50),
-idRole int REFERENCES Role(idRole) NOT NULL,
+phone varchar(50)
 );
 
 create table Formateur(
@@ -49,9 +33,7 @@ email varchar(50) NOT NULL,
 mdp varchar(50) NOT NULL,
 pdp varchar(50),
 phone varchar(50),
-idRole int REFERENCES Role(idRole) NOT NULL,
-idFormation int REFERENCES Formation(idFormation) NOT NULL,
-idSalle int REFERENCES Salle(idSalle)
+idFormation int REFERENCES Formation(idFormation) NOT NULL
 );
 
 create table Apprenant(
@@ -63,27 +45,42 @@ mdp varchar(50) NOT NULL,
 pdp varchar(50),
 phone varchar(50),
 adresse varchar(50),
-idRole int REFERENCES Role(idRole) NOT NULL,
 idFormation int REFERENCES Formation(idFormation) NOT NULL,
-idSalle int REFERENCES Salle(idSalle),
+salle int,
 nbrAbsJust int,
 nbrAbsNonJust int,
 nbrAbsDemiJour int,
 tauxAbsenteisme int,
+idAbs int
 );
 
 
-EXECUTE
+create table Login(
+id int Primary Key identity(1,1),
+nom varchar(50),
+prenom varchar(50), 
+email varchar(50) NOT NULL,
+mdp varchar(50) NOT NULL,
+status varchar(50) NOT NULL,
+);
 
 
-ALTER TABLE Apprenant
-ADD idAb int;
+
+create table Absence(
+idAbs int Primary Key identity(1,1),
+dateDebut date NOT NULL,
+dateFin date NOT NULL,
+nbrHeure float,
+motif varchar(50),
+justif varchar(50),
+idApprenant int REFERENCES Apprenant(idApprenant) NOT NULL,
+);
 
 
 EXECUTE
 
 ALTER TABLE Apprenant
 ADD CONSTRAINT FK_AbsenceApprenant
-FOREIGN KEY (idAb) REFERENCES Absence(idAbs);
+FOREIGN KEY (idAbs) REFERENCES Absence(idAbs);
 
 

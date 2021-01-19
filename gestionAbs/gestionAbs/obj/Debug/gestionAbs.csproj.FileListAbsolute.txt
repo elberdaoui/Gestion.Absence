@@ -1,0 +1,15 @@
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\bin\Debug\gestionAbs.exe.config
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\bin\Debug\gestionAbs.exe
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\bin\Debug\gestionAbs.pdb
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.csprojAssemblyReference.cache
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\MainWindow.g.cs
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\App.g.cs
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs_MarkupCompile.cache
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs_MarkupCompile.lref
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\MainWindow.baml
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.g.resources
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.Properties.Resources.resources
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.csproj.GenerateResource.cache
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.exe
+C:\Users\Youcode\source\repos\GestionAbsence\gestionAbs\gestionAbs\obj\Debug\gestionAbs.pdb
