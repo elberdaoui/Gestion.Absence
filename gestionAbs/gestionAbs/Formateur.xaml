@@ -1,0 +1,65 @@
+﻿<Page x:Class="gestionAbs.Formateur"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:gestionAbs"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="Azure"
+      Title="Formateur">
+
+    
+
+    <Grid>
+
+        <Grid Margin="0,0,595,256" Background="#FF50B3FE">
+            <Image Source="Assets\images\photo.png" Margin="0,10,0,51" />
+            <Label Content="Formateur" Margin="59,149,63,10" FontSize="16" HorizontalAlignment="Center" />
+        </Grid>
+        <Grid Margin="0,203,595,0" Background="#FF50B3FE">
+            <Button x:Name="absence" Margin="30,38,30,172" Content="Ajouter absence / retard" Background="#FF50B3FE" BorderBrush="#FF50B3FE" Foreground="White" Click="absence_Click" />
+            <Button x:Name="discon" Margin="30,104,28,103" Content="Deconnecter" Background="#FF50B3FE" BorderBrush="#FF50B3FE" Foreground="White" Click="discon_Click"  />
+            
+        </Grid>
+        <Grid Margin="205,0,0,0" Cursor="Hand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+               
+            </Grid.RowDefinitions>
+            <Grid Grid.RowSpan="2">
+                <TextBlock x:Name="txtBlock" Grid.Row="0" Text="List des apprenants" FontSize="39" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="No" Margin="131,0,130.667,398"/>
+                <DataGrid x:Name="dg"  Grid.Row="1" IsReadOnly="True" Cursor="Arrow" AutoGenerateColumns="False" Margin="0,52,-0.333,0" SelectedIndex="0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="50" Header="#" Binding="{Binding idApprenant}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="130" Header="Nom" Binding="{Binding nom}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="100" Header="Prenom" Binding="{Binding prenom}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="80" Header="Email" Binding="{Binding email}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="110" Header="Phone" Binding="{Binding phone}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="110" Header="Formation" Binding="{Binding formation}"></DataGridTextColumn>
+                        <!--<DataGridTextColumn Width="110" Header="Phone" Binding="{Binding phone}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="110" Header="Adresse" Binding="{Binding adresse}"></DataGridTextColumn>
+                        <DataGridTextColumn Width="110" Header="Formation" Binding="{Binding idFormation}"></DataGridTextColumn>-->
+                        <!--<DataGridTextColumn Width="110" Header="Salle" Binding="{Binding salle}"></DataGridTextColumn>-->
+                        <DataGridTemplateColumn x:Name="abs_temp" Header="Absent">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox x:Name="abs_chk" IsChecked="{Binding absent, Mode=TwoWay}" Checked="abs_chk_Checked" Unchecked="abs_chk_Unchecked"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn x:Name="late_temp"  Header="Retard">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox x:Name="late_chk" IsChecked="{Binding retard, Mode=TwoWay}" Checked="late_chk_Checked" Unchecked="late_chk_Unchecked"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

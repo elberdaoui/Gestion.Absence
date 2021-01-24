@@ -1,4 +1,5 @@
 ﻿using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows;
 
 namespace gestionAbs
@@ -9,7 +10,7 @@ namespace gestionAbs
     public partial class MainWindow : Window
     {
         //Connection string
-        SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0PAGHK2;Initial Catalog=absGestion;Integrated Security=True");
 
         public MainWindow()
         {
@@ -45,6 +46,9 @@ namespace gestionAbs
                 else if (dr[0].ToString() == "Formateur")
                 {
                     MessageBox.Show("Bienvenue Formateur !");
+                    Formateur frm = new Formateur();
+                    frame.Visibility = Visibility.Visible;
+                    frame.Content = frm;
                 }
                 else if (dr[0].ToString() == "Apprenant")
                 {
