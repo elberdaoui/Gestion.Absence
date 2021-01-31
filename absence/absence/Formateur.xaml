@@ -426,8 +426,8 @@
                             <Label Content="id Formateur :" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#DD000000" Width="70.192" Height="26.093" FontWeight="Bold" Margin="19.6,-38,0,0" FontSize="8"/>
                             <TextBox x:Name="Tbx_App_forma_info" Margin="77.525,-5,10,20" FontWeight="Bold" TextAlignment="Center" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="59.659" Text="TCommun" FontSize="11" />
                             <Label Content="Formation :" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#DD000000" Width="70.192" Height="26.093" FontWeight="Bold" Margin="19.6,-39,0,0" FontSize="8"/>
-                            <TextBox x:Name="Tbx_App_group_info" Margin="77.525,-4,10,20" FontWeight="Bold" TextAlignment="Center" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center" Width="59.659" Text="3" FontSize="11" />
-                            <Label Content="Groupe :" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#DD000000" Width="70.192" Height="26.093" FontWeight="Bold" Margin="19.6,-39,0,0" FontSize="8"/>
+                            <!--<TextBox x:Name="Tbx_App_group_info" Margin="77.525,-4,10,20" FontWeight="Bold" TextAlignment="Center" Height="24" HorizontalAlignment="Center" VerticalAlignment="Center" Width="59.659" Text="3" FontSize="11" />
+                            <Label Content="Groupe :" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#DD000000" Width="70.192" Height="26.093" FontWeight="Bold" Margin="19.6,-39,0,0" FontSize="8"/>-->
                         </StackPanel>
                     </materialDesign:Card>
                     <Button x:Name="btn_dropUp_info" Content="Button" HorizontalAlignment="Left" Height="27.599" Margin="185.8,44.033,0,0" VerticalAlignment="Top" Width="26.4" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden" RenderTransformOrigin="0.5,0.5">
@@ -496,6 +496,7 @@
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
+                            <!--<DataGridTextColumn Width="110" Header="Statut" ></DataGridTextColumn>-->
                         </DataGrid.Columns>
                     </DataGrid>
                     <!--<Button x:Name="btn_App_voirPlus__abs" Content="Plus  &gt;" HorizontalAlignment="Left" Height="27" Margin="451,359,0,0" VerticalAlignment="Top" Width="77" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="Btn_Abs_App_Click">
@@ -580,7 +581,7 @@
                     </Button.Background>
                 </Button>
 
-                <Grid x:Name="Grid_App_filtrAbsperMois" Margin="99.6,140,302.6,57.2" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
+                <!--<Grid x:Name="Grid_App_filtrAbsperMois" Margin="99.6,140,302.6,57.2" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5" Visibility="Hidden">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -617,7 +618,7 @@
                         </DataGrid.RenderTransform>
                     </DataGrid>
 
-                    <!--<Button x:Name="btn_App_filtre_mois" Content="Filtrer" HorizontalAlignment="Left" Height="29" Margin="528.337,32,0,0" VerticalAlignment="Top" Width="110.795" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_Click">
+                    --><!--<Button x:Name="btn_App_filtre_mois" Content="Filtrer" HorizontalAlignment="Left" Height="29" Margin="528.337,32,0,0" VerticalAlignment="Top" Width="110.795" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_Click">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF176FB7" Offset="0"/>
@@ -632,7 +633,7 @@
                                 <TranslateTransform/>
                             </TransformGroup>
                         </Button.RenderTransform>
-                    </Button>-->
+                    </Button>--><!--
 
 
                     <Image x:Name="image" HorizontalAlignment="Left" Height="44" Margin="307,27,0,0" VerticalAlignment="Top" Width="42" Source="filterIcon.png"/>
@@ -661,14 +662,14 @@
                         <ComboBoxItem Content="Decembre" HorizontalAlignment="Left" Width="237.6"/>
                     </ComboBox>
 
-                    <!--<Button x:Name="btn_App_filtre_mois_reinis" Content="Annuler" HorizontalAlignment="Left" Height="29" Margin="528,-3,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_reinis_Click" Visibility="Hidden">
+                    --><!--<Button x:Name="btn_App_filtre_mois_reinis" Content="Annuler" HorizontalAlignment="Left" Height="29" Margin="528,-3,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_reinis_Click" Visibility="Hidden">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF176FB7" Offset="0"/>
                                 <GradientStop Color="#FF62C2FF" Offset="1"/>
                             </LinearGradientBrush>
                         </Button.Background>
-                    </Button>-->
+                    </Button>--><!--
                     <Label x:Name="label_Copy1" Content="Filtrer par mois" HorizontalAlignment="Left" Margin="369,0,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="16">
                         <Label.RenderTransform>
                             <TransformGroup>
@@ -679,7 +680,7 @@
                             </TransformGroup>
                         </Label.RenderTransform>
                     </Label>
-                </Grid>
+                </Grid>-->
 
 
 

@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Windows;
@@ -18,8 +19,8 @@ namespace absence
             InitializeComponent();
 
         }
-
-        SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0PAGHK2;Initial Catalog=DATABASE;Integrated Security=True");
+        //SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
@@ -167,5 +168,13 @@ namespace absence
             
         }
 
+        private void Abs_prgbr_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            //var prb = (ProgressBar)sender;
+            abs_prgbr.Value = Convert.ToDouble(NabsNJus.Text);
+            //abs_prgbr.Value = Convert.ToInt32(NabsNJus.Text);
+            //int per = (int)((Convert.ToInt32(NabsNJus.Text) * 100) / abs_prgbr.Maximum);
+            //prgbr_txt.Text = per.ToString() + "%";
+        }
     }
 }

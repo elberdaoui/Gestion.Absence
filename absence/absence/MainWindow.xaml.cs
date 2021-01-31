@@ -9,8 +9,36 @@ namespace absence
     /// </summary>
     public partial class MainWindow : Window
     {
+        SqlCommand cmd = new SqlCommand();
+        Formateur frm = new Formateur();
+        ApprdashB aprn = new ApprdashB();
 
-        SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
+        public void mynbrAbsJust()
+        {
+            //cn.Open();
+
+            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'oui' ", cn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            aprn.NabsJus.Text = dr[0].ToString();
+            dr.Close();
+            //cn.Close();
+        }
+
+        public void mynbrAbsNonJust()
+        {
+            //cn.Open();
+            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'non' ", cn);
+            SqlDataReader dtr = cmd.ExecuteReader();
+            dtr.Read();
+            aprn.NabsNJus.Text = dtr[0].ToString();
+
+            //cn.Close();
+        }
+
+
+        //SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
+        SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0PAGHK2;Initial Catalog=DATABASE;Integrated Security=True");
 
         public MainWindow()
         {
@@ -54,23 +82,26 @@ namespace absence
                 //    Secrétaire.txtBl_Secr_Nom.Text = dr[1].ToString() + " " + dr[2].ToString();
                 //    Secrétaire.txtBl_Secr_id.Text = dr[5].ToString();
                 //}
-                //else if (dr[0].ToString() == "Formateur")
-                //{
-                //    DashFormateur formateur = new DashFormateur();
-                //    formateur.Show();
-                //    this.Hide();
-                //    formateur.txtBl_Format_Nom.Text = dr[1].ToString() + " " + dr[2].ToString();
-                //    formateur.txtBl_Format_forma.Text = dr[5].ToString();
-                //    formateur.txtBl_format_id.Text = dr[4].ToString();
-                //}
+                else if (dr[0].ToString() == "Formateur")
+                {
+                    
+                    frm.Show();
+                    this.Hide();
+                    frm.TBx_App_nom_home.Text = dr[1].ToString() + " " + dr[2].ToString();
+                    frm.Tbx_App_forma_info.Text = dr[6].ToString();
+                    frm.TBx_Form_id_info.Text = dr[4].ToString();
+                }
                 else if (dr[0].ToString() == "Apprenant")
                 {
-                    ApprdashB aprn = new ApprdashB();
+                    
                     aprn.Show();
                     this.Hide();
                     aprn.TBx_App_nom_home.Text = dr[1].ToString() + " " + dr[2].ToString();
                     aprn.Tbx_App_forma_info.Text = dr[6].ToString();
                     aprn.TBx_App_id_info.Text = dr[3].ToString();
+                    dr.Close();
+                    mynbrAbsJust();
+                    mynbrAbsNonJust();
                 }
 
             }

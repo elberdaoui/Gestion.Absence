@@ -98,7 +98,7 @@ namespace absence
 
             Grid_frm_info.Visibility = Visibility.Visible;
             Grid_dash_App.Visibility = Visibility.Hidden;
-            Grid_App_filtrAbsperMois.Visibility = Visibility.Hidden;
+            //Grid_App_filtrAbsperMois.Visibility = Visibility.Hidden;
             cn.Close();
         }
 
