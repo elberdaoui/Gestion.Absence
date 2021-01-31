@@ -1,0 +1,14 @@
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\bin\Debug\Formateur.exe.config
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\bin\Debug\Formateur.exe
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\bin\Debug\Formateur.pdb
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.g.resources
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.csproj.GenerateResource.cache
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.exe
+C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Formateur\obj\Debug\Formateur.pdb

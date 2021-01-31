@@ -1,0 +1,30 @@
+﻿<Window x:Class="Formateur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Formateur"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid Margin="0,0,580.333,254.667" Background="#FF3F90DE">
+            <Label Content="Formateur" HorizontalAlignment="Left" Margin="72.5,119,0,0" VerticalAlignment="Top" Width="68" Foreground="White"/>
+            <Image Source="C:\Users\Administrateur\Desktop\absence\Gestion.Absence\gestionAbs\Assets\images\600px-Circle-icons-profile.svg.png" HorizontalAlignment="Left" Height="100" Margin="56,14,0,0" VerticalAlignment="Top" Width="100"/>
+
+
+
+        </Grid>
+
+        <Grid Margin="0,171,580.333,-0.333" Background="#FF3F90DE">
+
+        </Grid>
+        <Button x:Name="absence" Content="Ajouter absence" HorizontalAlignment="Left" Margin="53.5,190,0,0" VerticalAlignment="Top" Width="106" Height="22" Background="#FF3F90DE" Foreground="White" BorderBrush="#FF3F90DE" FontWeight="Bold"/>
+        <Button x:Name="late" Content="Ajouter retard" HorizontalAlignment="Left" Margin="54,234,0,0" VerticalAlignment="Top" Width="106" Height="22" Background="#FF3F90DE" Foreground="White" BorderBrush="#FF3F90DE" FontWeight="Bold"/>
+        <Button x:Name="list" Content="Les apprenant" HorizontalAlignment="Left" Margin="54,278,0,0" VerticalAlignment="Top" Width="106" Height="22" Background="#FF3F90DE" Foreground="White" BorderBrush="#FF3F90DE" FontWeight="Bold"/>
+        <DatePicker HorizontalAlignment="Left" Margin="342,128,0,0" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
