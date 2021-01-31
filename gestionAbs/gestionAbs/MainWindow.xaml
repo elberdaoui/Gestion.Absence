@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:gestionAbs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" SizeToContent="WidthAndHeight">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
     <Grid>
         <Label Margin="113,110,525.6,282" Content="E-mail" FontWeight="Bold" FontSize="16" />
         <Label Margin="113,169,525.6,223" Content="Mot de passe" FontWeight="Bold" FontSize="16" />
@@ -15,7 +15,7 @@
         <Label x:Name="lbl_emailInco" Margin="254,136,384.6,256" Content="E-mail incorrecte" Foreground="#FFFF0A0A" FontSize="14" FontWeight="Bold" Visibility="Hidden" />
         <Label x:Name="lbl_mdpInco" Margin="254,197,378.6,195" Content="Mot de passe incorrecte" Foreground="#FFFF0A0A" FontSize="14" FontWeight="Bold" Visibility="Hidden" />
         <PasswordBox x:Name="passBox_login" Margin="254,169,232.6,223" />
-        <Frame x:Name="frame" Visibility="Hidden" NavigationUIVisibility="Hidden"/>
+
 
 
 
