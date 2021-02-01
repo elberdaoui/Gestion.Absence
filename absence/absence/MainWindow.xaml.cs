@@ -13,28 +13,28 @@ namespace absence
         Formateur frm = new Formateur();
         ApprdashB aprn = new ApprdashB();
 
-        public void mynbrAbsJust()
-        {
-            //cn.Open();
+        //public void mynbrAbsJust()
+        //{
+        //    //cn.Open();
 
-            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'oui' ", cn);
-            SqlDataReader dr = cmd.ExecuteReader();
-            dr.Read();
-            aprn.NabsJus.Text = dr[0].ToString();
-            dr.Close();
-            //cn.Close();
-        }
+        //    cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'oui' ", cn);
+        //    SqlDataReader dr = cmd.ExecuteReader();
+        //    dr.Read();
+        //    aprn.NabsJus.Text = dr[0].ToString();
+        //    dr.Close();
+        //    //cn.Close();
+        //}
 
-        public void mynbrAbsNonJust()
-        {
-            //cn.Open();
-            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'non' ", cn);
-            SqlDataReader dtr = cmd.ExecuteReader();
-            dtr.Read();
-            aprn.NabsNJus.Text = dtr[0].ToString();
+        //public void mynbrAbsNonJust()
+        //{
+        //    //cn.Open();
+        //    cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + aprn.TBx_App_id_info.Text + "' and justif = 'non' ", cn);
+        //    SqlDataReader dtr = cmd.ExecuteReader();
+        //    dtr.Read();
+        //    aprn.NabsNJus.Text = dtr[0].ToString();
 
-            //cn.Close();
-        }
+        //    //cn.Close();
+        //}
 
 
         //SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
@@ -100,8 +100,8 @@ namespace absence
                     aprn.Tbx_App_forma_info.Text = dr[6].ToString();
                     aprn.TBx_App_id_info.Text = dr[3].ToString();
                     dr.Close();
-                    mynbrAbsJust();
-                    mynbrAbsNonJust();
+                    //mynbrAbsJust();
+                    //mynbrAbsNonJust();
                 }
 
             }

@@ -17,12 +17,39 @@ namespace absence
         public ApprdashB()
         {
             InitializeComponent();
+            
 
         }
         SqlConnection cn = new SqlConnection("Data Source=DESKTOP-0PAGHK2;Initial Catalog=DATABASE;Integrated Security=True");
         //SqlConnection cn = new SqlConnection("initial catalog= absGestion; data source= DESKTOP-TLLL2MM; integrated security= true;");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
+
+
+        public void mynbrAbsJust()
+        {
+            cn.Open();
+
+            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + TBx_App_id_info.Text + "' and justif = 'oui' ", cn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            NabsJus.Text = dr[0].ToString();
+            dr.Close();
+            cn.Close();
+        }
+
+        public void mynbrAbsNonJust()
+        {
+            cn.Open();
+            cmd = new SqlCommand("select count(justif) from Absence where idApprenant = '" + TBx_App_id_info.Text + "' and justif = 'non' ", cn);
+            SqlDataReader dtr = cmd.ExecuteReader();
+            dtr.Read();
+            NabsNJus.Text = dtr[0].ToString();
+            dtr.Close();
+            cn.Close();
+        }
+
+
 
         private void btn_exit_Click(object sender, RoutedEventArgs e)
         {
@@ -49,6 +76,13 @@ namespace absence
             dataGrid_App_home.ItemsSource = dt.DefaultView;
 
             cn.Close();
+            mynbrAbsJust();
+            mynbrAbsNonJust();
+            int abs = Convert.ToInt32(NabsJus.Text) + Convert.ToInt32(NabsNJus.Text);
+            abs_prgbr.Value = abs;
+            prgbr_txt.Text = (abs * 10 / 3).ToString() + "%";
+            MessageBox.Show(abs.ToString());
+            MessageBox.Show(prgbr_txt.Text);
         }
 
         private void Btn_Abs_App_Click(object sender, RoutedEventArgs e)
@@ -129,6 +163,8 @@ namespace absence
             TBx_app_info_phone.Text = dr[5].ToString();
             TBx_app_info_forma.Text = dr[6].ToString();
 
+            //int abs = Convert.ToInt32(NabsJus.Text) + Convert.ToInt32(NabsNJus.Text);
+            //MessageBox.Show(abs.ToString());
             //byte[] img = ((byte[])dr[9]);
 
             //using (MemoryStream ms = new MemoryStream(img))
@@ -170,8 +206,10 @@ namespace absence
 
         private void Abs_prgbr_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
+            //int abs = Convert.ToInt32(NabsJus.Text) + Convert.ToInt32(NabsNJus.Text);
+            //int abs = Convert.ToInt32(NabsNJus.Text) + Convert.ToInt32(NabsNJus.Text);
             //var prb = (ProgressBar)sender;
-            abs_prgbr.Value = Convert.ToDouble(NabsNJus.Text);
+            //abs_prgbr.Value = abs;
             //abs_prgbr.Value = Convert.ToInt32(NabsNJus.Text);
             //int per = (int)((Convert.ToInt32(NabsNJus.Text) * 100) / abs_prgbr.Maximum);
             //prgbr_txt.Text = per.ToString() + "%";

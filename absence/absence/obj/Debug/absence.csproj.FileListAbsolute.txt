@@ -51,3 +51,30 @@ C:\Users\Administrateur\Desktop\testClean\Gestion.Absence\absence\absence\obj\De
 C:\Users\Administrateur\Desktop\testClean\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.GenerateResource.cache
 C:\Users\Administrateur\Desktop\testClean\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.CoreCompileInputs.cache
 C:\Users\Administrateur\Desktop\testClean\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.CopyComplete
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\absence.exe.config
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\absence.exe
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\absence.pdb
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\MaterialDesignColors.dll
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\ApprdashB.g.cs
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\Formateur.g.cs
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\MainWindow.g.cs
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\Template.g.cs
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\App.g.cs
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence_MarkupCompile.cache
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence_MarkupCompile.lref
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\App.baml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\ApprdashB.baml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\Formateur.baml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\MainWindow.baml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\Template.baml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.g.resources
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.Properties.Resources.resources
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.GenerateResource.cache
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.CoreCompileInputs.cache
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.CopyComplete
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.exe
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.pdb
