@@ -208,5 +208,19 @@ namespace absence
 
 
         }
+
+        private void TBx_Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //cmd.Connection = cn;
+            //DataTable dtb = new DataTable();
+            //cn.Open();
+            //string query = $"select idApprenant, nom, prenom, email, phone, adresse from Apprenant where nom like '%{TBx_Search.Text}%' or prenom like '%{TBx_Search.Text}%'";
+            //SqlCommand com = new SqlCommand(query,cn);
+
+           
+            //dr = com.ExecuteReader();
+            //dtb.Load(dr);
+            //dataGrid_Form_home.ItemsSource = dtb.DefaultView;
+        }
     }
 }

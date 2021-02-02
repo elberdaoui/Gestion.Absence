@@ -100,8 +100,9 @@ namespace absence
                     aprn.Tbx_App_forma_info.Text = dr[6].ToString();
                     aprn.TBx_App_id_info.Text = dr[3].ToString();
                     dr.Close();
-                    //mynbrAbsJust();
-                    //mynbrAbsNonJust();
+                    //aprn.mynbrAbsJust();
+                    //aprn.mynbrAbsNonJust();
+                    aprn.Absence();
                 }
 
             }

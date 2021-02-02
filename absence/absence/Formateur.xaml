@@ -139,7 +139,7 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="71.724"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="73.788"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="dataGrid_App_Abs">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="dataGrid_Form_home">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="31.2"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="57"/>
@@ -149,35 +149,35 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="80.4"/>
             </DoubleAnimationUsingKeyFrames>-->
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CBx_mois_appr">
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CBx_mois_appr">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="80.4"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_Mesabs">
+            </DoubleAnimationUsingKeyFrames>-->
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_Mesabs">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="24"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="75.6"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="129.6"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="dataGrid_App_Abs">
+            </DoubleAnimationUsingKeyFrames>-->
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="dataGrid_App_Abs">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.92"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.842"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="label_Mesabs">
+            </DoubleAnimationUsingKeyFrames>-->
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="label_Mesabs">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-3.6"/>
-            </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image">
+            </DoubleAnimationUsingKeyFrames>-->
+            <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image">
                 <EasingThicknessKeyFrame KeyTime="0" Value="307,27,0,0"/>
                 <EasingThicknessKeyFrame KeyTime="0:0:0.1" Value="380,27,0,0"/>
-            </ThicknessAnimationUsingKeyFrames>
+            </ThicknessAnimationUsingKeyFrames>-->
             <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="btn_App_filtre_mois_reinis">
                 <EasingThicknessKeyFrame KeyTime="0:0:0.1" Value="608,-3,0,0"/>
             </ThicknessAnimationUsingKeyFrames>-->
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="label_Copy1">
+            <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="label_Copy1">
                 <EasingThicknessKeyFrame KeyTime="0:0:0.1" Value="447,0,0,0"/>
-            </ThicknessAnimationUsingKeyFrames>
+            </ThicknessAnimationUsingKeyFrames>-->
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Grid_frm_info">
                 <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.968"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.971"/>
@@ -239,12 +239,12 @@
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="dataGrid_App_Abs">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="dataGrid_Form_home">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.792"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.884"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.971"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="dataGrid_App_Abs">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="dataGrid_Form_home">
                 <EasingDoubleKeyFrame KeyTime="0" Value="67.2"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="37.6"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="9.6"/>
@@ -252,21 +252,21 @@
             <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="btn_App_filtre_mois">
                 <EasingDoubleKeyFrame KeyTime="0" Value="49.6"/>
             </DoubleAnimationUsingKeyFrames>-->
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CBx_mois_appr">
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="CBx_mois_appr">
                 <EasingDoubleKeyFrame KeyTime="0" Value="49.6"/>
-            </DoubleAnimationUsingKeyFrames>
+            </DoubleAnimationUsingKeyFrames>-->
             <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="btn_App_filtre_mois">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-3.2"/>
             </DoubleAnimationUsingKeyFrames>-->
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="CBx_mois_appr">
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="CBx_mois_appr">
                 <EasingDoubleKeyFrame KeyTime="0" Value="-3.2"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_Mesabs">
+            </DoubleAnimationUsingKeyFrames>-->
+            <!--<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="label_Mesabs">
                 <EasingDoubleKeyFrame KeyTime="0" Value="126.4"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="75.2"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="14.4"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-51.2"/>
-            </DoubleAnimationUsingKeyFrames>
+            </DoubleAnimationUsingKeyFrames>-->
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="image2">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.858"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.973"/>
@@ -275,15 +275,15 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="-16.8"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-3.2"/>
             </DoubleAnimationUsingKeyFrames>
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image">
+            <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="image">
                 <EasingThicknessKeyFrame KeyTime="0" Value="350,27,0,0"/>
-            </ThicknessAnimationUsingKeyFrames>
+            </ThicknessAnimationUsingKeyFrames>-->
             <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="btn_App_filtre_mois_reinis">
                 <EasingThicknessKeyFrame KeyTime="0" Value="578,-3,0,0"/>
             </ThicknessAnimationUsingKeyFrames>-->
-            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="label_Copy1">
+            <!--<ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="label_Copy1">
                 <EasingThicknessKeyFrame KeyTime="0" Value="417,0,0,0"/>
-            </ThicknessAnimationUsingKeyFrames>
+            </ThicknessAnimationUsingKeyFrames>-->
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Grid_frm_info">
                 <EasingDoubleKeyFrame KeyTime="0" Value="0.986"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.01"/>
@@ -297,6 +297,33 @@
                 <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-6.4"/>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
+        <ControlTemplate x:Key="ButtonBaseControlTemplate1" TargetType="{x:Type ButtonBase}">
+            <Border x:Name="border" CornerRadius="45" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness=".5" Background="{TemplateBinding Background}" SnapsToDevicePixels="True" Width="12" Height="12">
+                <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" Margin="1,1.25,1,0" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Top" Height="9"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="Button.IsDefaulted" Value="True">
+                    <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#FFBEE6FD"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FF3C7FB1"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#FFC4E5F6"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FF2C628B"/>
+                </Trigger>
+                <Trigger Property="ToggleButton.IsChecked" Value="True">
+                    <Setter Property="Background" TargetName="border" Value="#FFBCDDEE"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FF245A83"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                    <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                    <Setter Property="Foreground" Value="#FF838383"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
     </Window.Resources>
     <Window.Triggers>
         <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="btn_drop_info">
@@ -369,7 +396,7 @@
 
                 <Rectangle HorizontalAlignment="Left" Height="29" Margin="462.4,20,0,0" VerticalAlignment="Top" Width="311.418" RadiusY="9.6" RadiusX="9.6" Fill="White"/>
                 <Image Source="search.png" Stretch="Fill" Margin="471.901,26,659.72,471.2"/>
-                <TextBox x:Name="TBx_Search" MouseDoubleClick="ClearTxt" HorizontalAlignment="Left" Height="25"  TextWrapping="Wrap" VerticalAlignment="Top" Width="188.962" Background="{x:Null}" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" FontSize="11" Grid.IsSharedSizeScope="True" Text="Chercher..." BorderThickness="0" Margin="496.181,24,0,0" MouseLeave="BackText"/>
+                <TextBox x:Name="TBx_Search" MouseDoubleClick="ClearTxt" HorizontalAlignment="Left" Height="25"  TextWrapping="Wrap" VerticalAlignment="Top" Width="188.962" Background="{x:Null}" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" FontSize="11" Grid.IsSharedSizeScope="True" Text="Chercher..." BorderThickness="0" Margin="496.181,24,0,0" MouseLeave="BackText" TextChanged="TBx_Search_TextChanged"/>
 
 
                 <Button x:Name="btn_exit" Content="Button" HorizontalAlignment="Left" Height="35" Margin="1112,18,-1.4,0" VerticalAlignment="Top" Width="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="btn_exit_Click">
@@ -455,7 +482,7 @@
                             <Style TargetType="{x:Type DataGridColumnHeader}">
                                 <Setter Property="Background" Value="#5fbffc"/>
                                 <Setter Property="HorizontalContentAlignment" Value="Center"/>
-                                
+
                             </Style>
                             <Style TargetType="{x:Type DataGridCell}">
                                 <Setter Property="HorizontalAlignment" Value="Center"/>
@@ -618,7 +645,8 @@
                         </DataGrid.RenderTransform>
                     </DataGrid>
 
-                    --><!--<Button x:Name="btn_App_filtre_mois" Content="Filtrer" HorizontalAlignment="Left" Height="29" Margin="528.337,32,0,0" VerticalAlignment="Top" Width="110.795" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_Click">
+                    -->
+                <!--<Button x:Name="btn_App_filtre_mois" Content="Filtrer" HorizontalAlignment="Left" Height="29" Margin="528.337,32,0,0" VerticalAlignment="Top" Width="110.795" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_Click">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF176FB7" Offset="0"/>
@@ -633,7 +661,8 @@
                                 <TranslateTransform/>
                             </TransformGroup>
                         </Button.RenderTransform>
-                    </Button>--><!--
+                    </Button>-->
+                <!--
 
 
                     <Image x:Name="image" HorizontalAlignment="Left" Height="44" Margin="307,27,0,0" VerticalAlignment="Top" Width="42" Source="filterIcon.png"/>
@@ -662,14 +691,16 @@
                         <ComboBoxItem Content="Decembre" HorizontalAlignment="Left" Width="237.6"/>
                     </ComboBox>
 
-                    --><!--<Button x:Name="btn_App_filtre_mois_reinis" Content="Annuler" HorizontalAlignment="Left" Height="29" Margin="528,-3,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_reinis_Click" Visibility="Hidden">
+                    -->
+                <!--<Button x:Name="btn_App_filtre_mois_reinis" Content="Annuler" HorizontalAlignment="Left" Height="29" Margin="528,-3,0,0" VerticalAlignment="Top" Width="111" BorderBrush="#FF384A8B" RenderTransformOrigin="0.5,0.5" Click="btn_App_filtre_mois_reinis_Click" Visibility="Hidden">
                         <Button.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="#FF176FB7" Offset="0"/>
                                 <GradientStop Color="#FF62C2FF" Offset="1"/>
                             </LinearGradientBrush>
                         </Button.Background>
-                    </Button>--><!--
+                    </Button>-->
+                <!--
                     <Label x:Name="label_Copy1" Content="Filtrer par mois" HorizontalAlignment="Left" Margin="369,0,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="16">
                         <Label.RenderTransform>
                             <TransformGroup>
@@ -866,6 +897,7 @@
                                  Center="200 130"/>
                     </Image.Clip>-->
                 </Image>
+                <Button Content="Button" HorizontalAlignment="Left" Margin="1515.4,16.936,-440.2,0" Grid.Row="1" Style="{DynamicResource SimpleButton}" VerticalAlignment="Top" Width="75" Template="{DynamicResource ButtonBaseControlTemplate1}"/>
 
 
             </Grid>

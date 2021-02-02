@@ -78,3 +78,8 @@ C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\abse
 C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.csproj.CopyComplete
 C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.exe
 C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.pdb
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\absence.csprojAssemblyReference.cache
+C:\Users\Administrateur\Desktop\Formation laravel 8\Gestion.Absence\absence\absence\obj\Debug\Simple Styles.baml

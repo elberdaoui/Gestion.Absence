@@ -81,8 +81,17 @@ namespace absence
             int abs = Convert.ToInt32(NabsJus.Text) + Convert.ToInt32(NabsNJus.Text);
             abs_prgbr.Value = abs;
             prgbr_txt.Text = (abs * 10 / 3).ToString() + "%";
-            MessageBox.Show(abs.ToString());
-            MessageBox.Show(prgbr_txt.Text);
+            //MessageBox.Show(abs.ToString());
+            //MessageBox.Show(prgbr_txt.Text);
+        }
+
+        public void Absence()
+        {
+            mynbrAbsJust();
+            mynbrAbsNonJust();
+            int abs = Convert.ToInt32(NabsJus.Text) + Convert.ToInt32(NabsNJus.Text);
+            abs_prgbr.Value = abs;
+            prgbr_txt.Text = (abs * 10 / 3).ToString() + "%";
         }
 
         private void Btn_Abs_App_Click(object sender, RoutedEventArgs e)
