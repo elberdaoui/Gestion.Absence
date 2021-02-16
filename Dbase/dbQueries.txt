@@ -22,7 +22,9 @@ prenom varchar(50) NOT NULL,
 email varchar(50) NOT NULL, 
 mdp varchar(50) NOT NULL,
 pdp varchar(50),
-phone varchar(50)
+phone varchar(50),
+adresse varchar(50),
+img image
 );
 
 create table Formateur(
@@ -33,7 +35,8 @@ email varchar(50) NOT NULL,
 mdp varchar(50) NOT NULL,
 pdp varchar(50),
 phone varchar(50),
-idFormation int REFERENCES Formation(idFormation) NOT NULL
+idFormation int REFERENCES Formation(idFormation) NOT NULL, 
+groupe int
 );
 
 create table Apprenant(
@@ -46,12 +49,14 @@ pdp varchar(50),
 phone varchar(50),
 adresse varchar(50),
 idFormation int REFERENCES Formation(idFormation) NOT NULL,
-salle int,
 nbrAbsJust int,
 nbrAbsNonJust int,
 nbrAbsDemiJour int,
 tauxAbsenteisme int,
-idAbs int
+idAbs int, 
+groupe int, 
+idFormateur int REFERENCES Formateur(idFormateur) NOT NULL,
+picture varbinary(MAX)
 );
 
 
@@ -62,25 +67,26 @@ prenom varchar(50),
 email varchar(50) NOT NULL,
 mdp varchar(50) NOT NULL,
 status varchar(50) NOT NULL,
+idFormation int REFERENCES Formation(idFormation) NOT NULL,
+idApprenant int REFERENCES Apprenant(idApprenant) NOT NULL,
+idFormateur int REFERENCES Formateur(idFormateur) NOT NULL,
+idSecretaire int REFERENCES Secretaire(idSecretary) NOT NULL,
+idAdmin int REFERENCES Admin(idAdmin) NOT NULL
 );
 
 
 
 create table Absence(
 idAbs int Primary Key identity(1,1),
-dateDebut date NOT NULL,
-dateFin date NOT NULL,
 nbrHeure float,
 motif varchar(50),
 justif varchar(50),
 idApprenant int REFERENCES Apprenant(idApprenant) NOT NULL,
+dateAbs varchar(50),
+mois varchar(50),
+idFormateur int REFERENCES Formateur(idFormateur) NOT NULL,
+doc varbinary(MAX),
+retard varchar(50),
+dateRtd varchar(50)
 );
-
-
-EXECUTE
-
-ALTER TABLE Apprenant
-ADD CONSTRAINT FK_AbsenceApprenant
-FOREIGN KEY (idAbs) REFERENCES Absence(idAbs);
-
 

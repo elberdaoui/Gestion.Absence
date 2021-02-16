@@ -1,0 +1,30 @@
+﻿<Window x:Class="absence.AdminFormateur"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:absence"
+        mc:Ignorable="d"
+        Title="Formateur1" Height="567.279" Width="982.432">
+    <Grid Background="#FF800080">
+        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="213" Height="44" Click="btn_add_Click"   />
+        <Button x:Name="btn_edit" Content="edit" HorizontalAlignment="Left" Margin="10,142.07,0,0" VerticalAlignment="Top" Width="213" Height="44" Click="btn_edit_Click"   />
+        <Button x:Name="btn_delete" Content="delete" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" Width="213" Height="44" Click="btn_delete_Click"   />
+        <TextBox x:Name="input_name" HorizontalAlignment="Left" Height="23" Margin="350.229,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="input_Lname" HorizontalAlignment="Left" Height="23" Margin="350.229,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="input_phone" HorizontalAlignment="Left" Height="23" Margin="624.229,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="input_mail" HorizontalAlignment="Left" Height="23" Margin="350.229,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <DataGrid x:Name="DG_Zone" HorizontalAlignment="Left" Height="226" Margin="0,313,0,0" VerticalAlignment="Top" Width="978"  AutoGenerateColumns="true" SelectedIndex="0" />
+        <Label Content="Name" HorizontalAlignment="Left" Margin="281.229,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="txt_lastname" Content="last Name" HorizontalAlignment="Left" Margin="281.229,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="mail" HorizontalAlignment="Left" Margin="281.229,185,0,0" VerticalAlignment="Top"/>
+        <Label Content="phone" HorizontalAlignment="Left" Margin="553.229,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID FORMATION" HorizontalAlignment="Left" Margin="524.356,146.04,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="input_mdp" HorizontalAlignment="Left" Height="23" Margin="350.229,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <Label Content="mot de pass" HorizontalAlignment="Left" Margin="261.229,235.02,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="id_delete" HorizontalAlignment="Left" Height="23" Margin="49.229,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="idform" HorizontalAlignment="Left" Height="23" Margin="624.229,146.04,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="id_edit" HorizontalAlignment="Left" Height="23" Margin="49.229,191.07,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144"/>
+
+    </Grid>
+</Window>
